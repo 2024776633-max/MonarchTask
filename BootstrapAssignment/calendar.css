@@ -1,0 +1,126 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #6ac1c5, #bda5ff);
+    padding-top: 120px; 
+}
+
+#calendar {
+    width: 90%;
+    margin: 0 auto 50px;   
+    position: relative;
+}
+
+.evo-calendar {
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    bottom: 80%;
+}
+
+.evo-calendar .calendar {
+    flex: 2;
+    min-width: 450px;
+}
+
+.evo-calendar .event-list {
+    flex: 1;
+    max-width: 320px;
+    overflow-y: auto;
+}
+
+
+.evo-calendar .event-item {
+    font-size: 0.9rem !important;
+}
+
+.evo-calendar .event-header {
+    font-size: 1rem !important;
+}
+
+.evo-calendar .event-title {
+    font-size: 0.9rem !important;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 150px; /* navbar spacing for phones */
+    }
+
+    /* Stack calendar + events vertically */
+    .evo-calendar {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .evo-calendar .calendar {
+        width: 100% !important;
+        min-width: unset !important;
+    }
+
+    .evo-calendar .event-list {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    /* Smaller day numbers */
+    .evo-calendar .day {
+        font-size: clamp(10px, 2.5vw, 12px) !important;
+    }
+
+    /* Smaller month title */
+    .evo-calendar .month {
+        font-size: clamp(16px, 4vw, 20px) !important;
+    }
+
+    /* Navigation arrows */
+    .evo-calendar .calendar-header .icon {
+        font-size: 20px !important;
+        padding: 8px;
+    }
+
+    /* Smaller events */
+    .evo-calendar .event-content {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+    .evo-calendar .month {
+        font-size: 16px !important;
+    }
+    .evo-calendar .day {
+        font-size: 10px !important;
+    }
+    .evo-calendar .event-content {
+        font-size: 0.75rem !important;
+    }
+}
+
+.evo-calendar .event-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.evo-calendar .event-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.evo-calendar .event-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

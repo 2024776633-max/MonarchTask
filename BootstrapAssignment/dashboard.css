@@ -1,0 +1,21 @@
+
+    .logo {
+        height: 75px; 
+        width: auto; 
+        vertical-align: middle; 
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+        height: 30px; 
+        }
+    }
+    .footer-branding-col {
+    text-align: center; 
+}
+
+.footer-logo-link {
+    display: block; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}

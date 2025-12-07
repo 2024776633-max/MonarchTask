@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    background-color: #f8f9fa !important; 
+}
+
+.global-container {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.login-form {
+    width: 380px;
+    padding: 30px; 
+    background-color: #ffffff !important; 
+    border-radius: 12px !important;
+    border: 1px solid #dee2e6; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+.login-form, 
+.login-form .form-label, 
+.login-form .form-check-label {
+    color: #212529; 
+}
+
+
+.card-title {
+    color: #17a2b8 !important; 
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    background: #f0f0f0; 
+    color: #212529; 
+    border: 1px solid #ced4da; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    box-shadow: none; 
+    transition: all 0.3s ease;
+}
+
+
+.login-form input[type="email"]:focus, 
+.login-form input[type="password"]:focus { 
+    outline: none;
+    background: #ffffff !important;
+    color: #212529 !important; 
+    border: 2px solid #17a2b8 !important; 
+    box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25) !important; 
+    margin-bottom: 20px; 
+}
+
+.btn-primary {
+
+    background-color: #17a2b8 !important; 
+    border-color: #17a2b8 !important;
+    color: #ffffff !important; 
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px !important;
+    padding: 10px 0;
+    transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #138496 !important;
+    border-color: #138496 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: none; 
+}
